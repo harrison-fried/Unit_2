@@ -150,3 +150,7 @@ if user_input == 'y':
   score[4] += 1
 
 print("I think that your favorite food is " + (food[score.index(max(score))]))
+
+(score.remove[score.index(max(score))])
+
+print("I think that your second favorite food is " + (food[score.index(max(score))]))
