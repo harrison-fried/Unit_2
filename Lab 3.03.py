@@ -270,6 +270,7 @@ while len(player1deck):
             print("WAR!")
             points_avaliable = 4
 
+
     compare_scores(p1card, p2card)
     
 
@@ -278,7 +279,12 @@ while len(player1deck):
     
 
 print(" The player decks are empty")
-if player1score > player2score:
-    print(f"{player1} wins! ")
+if p1card == p2card:
+    deck = shuffled_deck()
+    player1deck = deck[0:26]
+    player2deck = deck[26:53]
+    points_avaliable = 4
+elif player1score > player2score:
+     print(f"{player1} wins! ")
 elif player1score < player2score:
     print(f"{player2} wins! ")
