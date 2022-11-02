@@ -52,3 +52,18 @@ def de_vowel(sentence):
 scentence = input("What would you like your scentence to be? ")
 
 print(de_vowel(scentence))
+
+def count_vowel(a_sentence):
+    vowel = 'aeiou'
+    in_sentence = 0
+    for letter in a_sentence:
+        if letter in vowel:
+            in_sentence += 1
+
+    return in_sentence
+
+
+print(f"There are {count_vowel(scentence)} vowels in your sentence")
+
+    
+
