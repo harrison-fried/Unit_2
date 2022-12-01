@@ -20,6 +20,42 @@ def print_board():
             print(row_string)
 
 
+def game_loop():
+    player1 = input("Player 1 enter your name ")
+    player2 = input("Player 2 enter your name ")
+    current_turn = 1
+    if current_turn == 1:
+        print_board()
+        player_1_choice = int(input(f"{player1} where would you like your first move to be?"))
+        for row in board:
+            for place in row:
+                if place == player_1_choice:
+                    if row == 0:
+                        row[place - 1] = 'X'
+                    elif row == 1:
+                        row[place - 4] = 'X'
+                    elif row == 2:
+                        row[place - 7] = 'X'
+        current_turn = 2
+        print_board()
+        if current_turn == 2:
+            player_2_choice = int(input(f"{player2} where would you like your first move to be?"))
+            for row in board:
+                for place in row:
+                    if place == player_2_choice:
+                        if row == 0:
+                            row[place - 1] = 'O'
+                        elif row == 1:
+                            row[place - 4] = 'O'
+                        elif row == 2:
+                            row[place - 7] = 'O'
+        current_turn = 1
+        print_board()
+
+playing = True
+
+while playing:
+    game_loop()
 
 
-print_board()
+
