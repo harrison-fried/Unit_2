@@ -46,6 +46,7 @@ abbreviation_dictionary = {
     'gn':'goodnight',
     'bfr':'be for real',
     'acc':'actually',
+    'dw':'dont worry'
 }
 
 wanted_def = input("What abbreviation would you like yo know? ")
