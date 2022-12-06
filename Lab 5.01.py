@@ -54,3 +54,7 @@ if wanted_def in abbreviation_dictionary:
     print(abbreviation_dictionary[wanted_def])
 else:
     print("Sorry, that abbreviation is not in our dictionary...")
+
+# option = input("Would you like to add a definition?")
+# if option == 'yes':
+#     new_def = input("What abbreviation would you like to add")
